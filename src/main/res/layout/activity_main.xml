@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff8ed"
+    android:gravity="center_vertical"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_red_dark" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/holo_red_dark" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/holo_red_dark" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:background="@android:color/holo_red_dark" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/box_title_1"
+                android:fontFamily="@font/dxpnm"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="기"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:background="@android:color/holo_red_dark" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/box_title_1"
+                android:fontFamily="@font/dxpnm"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="분"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:background="@android:color/holo_red_dark" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/box_title_1"
+                android:fontFamily="@font/dxpnm"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="의"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:background="@android:color/holo_red_dark" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/box_title_1"
+                android:fontFamily="@font/dxpnm"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=""
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:background="@android:color/holo_red_dark" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/holo_red_dark" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/holo_red_dark" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_red_dark" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_red_dark" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/holo_red_dark" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/holo_red_dark" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:background="@android:color/holo_red_dark" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/box_title_1"
+                android:fontFamily="@font/dxpnm"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=""
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:background="@android:color/holo_red_dark" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/box_title_1"
+                android:fontFamily="@font/dxpnm"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=""
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:background="@android:color/holo_red_dark" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/box_title_1"
+                android:fontFamily="@font/dxpnm"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="오"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:background="@android:color/holo_red_dark" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/box_title_1"
+                android:fontFamily="@font/dxpnm"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="늘"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:background="@android:color/holo_red_dark" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/holo_red_dark" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/holo_red_dark" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_red_dark" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_title"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:background="?attr/selectableItemBackground"
+        android:fontFamily="@font/dxpnm"
+        android:text="지나간 기분"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_title"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="130dp"
+        android:background="?attr/selectableItemBackground"
+        android:fontFamily="@font/dxpnm"
+        android:text="당신의 하루는 어땠나요"
+        android:textSize="18sp"/>
+</RelativeLayout>

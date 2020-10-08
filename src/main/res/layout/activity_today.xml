@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff8ed">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FFD593">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="당신의 오늘은 어땠나요?"
+            android:fontFamily="@font/dxpnm"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/dxpnm"
+        android:text="날씨의 오늘"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/layout_weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_w_1"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sunny" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/dxpnm"
+                android:text="맑음"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_w_2"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cloud" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/dxpnm"
+                android:text="구름"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_w_3"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/rainy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/dxpnm"
+                android:text="비"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_w_4"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/wind" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/dxpnm"
+                android:text="바람"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_w_5"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/snow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/dxpnm"
+                android:text="눈"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_weather"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/dxpnm"
+        android:text="기록의 오늘"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.moodtoday.widget.LineEditText
+        android:id="@+id/edt_contents"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:layout_below="@id/tv3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:lineSpacingExtra="10dp"
+        android:gravity="top"
+        android:fontFamily="@font/dxpnm"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_contents"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:src="@drawable/happy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/dxpnm"
+                android:text="행복"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:src="@drawable/blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/dxpnm"
+                android:text="우울"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:src="@drawable/soso" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/dxpnm"
+                android:text="쏘쏘"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv4"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:src="@drawable/proud" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/dxpnm"
+                android:text="뿌듯"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv5"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:src="@drawable/angry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/dxpnm"
+                android:text="분노"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.moodtoday.widget.LineEditText
+        android:id="@+id/edt_date"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:minHeight="100dp"
+        android:layout_below="@id/layout_bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:lineSpacingExtra="10dp"
+        android:fontFamily="@font/dxpnm"
+        android:textSize="18sp" />
+
+</RelativeLayout>
